@@ -30,7 +30,7 @@ typedef struct
 {
     struct
     {
-        uint16_t ch[4];
+        float ch[4];
         uint8_t s[2];
     }rc;
     struct
