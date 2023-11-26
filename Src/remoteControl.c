@@ -4,12 +4,12 @@
 
 #include "../Inc/remoteControl.h"
 
-extern DMA_HandleTypeDef hdma_usart3_rx;
 volatile uint8_t sbus_rx_buf[RC_FRAME_LENGTH];
 RC_Ctl_t rC_ctrl;
 
+extern UART_HandleTypeDef huart3;
+
 void RC_init(void) {
-    HAL_UART_MspInit(&huart1);
     HAL_UART_MspInit(&huart3);
     HAL_UARTEx_ReceiveToIdle_DMA(&huart3, (uint8_t *) sbus_rx_buf, RC_FRAME_LENGTH);
 }

@@ -5,8 +5,6 @@
 #ifndef EC_HW_PLATFORM_REMOTE_CONTROL_H
 #define EC_HW_PLATFORM_REMOTE_CONTROL_H
 #include "main.h"
-#include "usart.h"
-#include "stm32f4xx_hal_dma.h"
 
 /* ----------------------- RC Channel Definition---------------------------- */
 #define RC_CH_VALUE_MIN ((uint16_t)364 )
