@@ -2,7 +2,7 @@
 // Created by cwlm on 2023/11/17.
 //
 
-#include "../Inc/remotecontrol.h"
+#include "../Inc/remoteControl.h"
 
 extern DMA_HandleTypeDef hdma_usart3_rx;
 volatile uint8_t sbus_rx_buf[RC_FRAME_LENGTH];
