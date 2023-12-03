@@ -65,8 +65,9 @@ add_executable(${PROJECT_NAME}.elf ${SOURCES} ${LINKER_SCRIPT}
         Src/Pid.cpp
         Src/callback.c
         Src/RemoteControl.c
-        Src/dataProcess.c
-        Src/UserCAN.c)
+        Src/DataProcess.c
+        Src/UserCAN.c
+        Src/Motor.cpp)
 
 set(HEX_FILE ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.hex)
 set(BIN_FILE ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.bin)

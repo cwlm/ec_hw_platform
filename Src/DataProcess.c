@@ -2,9 +2,6 @@
 // Created by cwlm on 2023/12/3.
 //
 
-#ifndef EC_HW_PLATFORM_DATAPROCESS_H
-#define EC_HW_PLATFORM_DATAPROCESS_H
-
 #include "../Inc/DataProcess.h"
 
 float clamp(float val, float min, float max) {
@@ -16,5 +13,3 @@ float clamp(float val, float min, float max) {
         return val;
     }
 }
-
-#endif //EC_HW_PLATFORM_DATAPROCESS_H

@@ -11,6 +11,6 @@ extern "C" {
 void canFilterInit(void);
 
 #ifdef __cplusplus
-}
+};
 #endif
 #endif //EC_HW_PLATFORM_USERCAN_H
