@@ -64,7 +64,8 @@ add_link_options(-T ${LINKER_SCRIPT})
 add_executable(${PROJECT_NAME}.elf ${SOURCES} ${LINKER_SCRIPT}
         Src/Callback.c
         Src/RemoteControl.c
-        Src/DataProcess.c)
+        Src/DataProcess.c
+        Src/Pid.cpp)
 
 set(HEX_FILE ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.hex)
 set(BIN_FILE ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.bin)
