@@ -4,11 +4,6 @@
 
 #ifndef EC_HW_PLATFORM_REMOTE_CONTROL_H
 #define EC_HW_PLATFORM_REMOTE_CONTROL_H
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 #include "main.h"
 
 /* ----------------------- RC Channel Definition---------------------------- */
@@ -52,11 +47,7 @@ typedef struct
     }key;
 }__packed RC_Ctl_t;
 
-void sbus_to_rc();
+void sbus_to_rc(volatile const uint8_t *sbus_buf, RC_Ctl_t *rc_ctrl);
 void RC_init(void);
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif //EC_HW_PLATFORM_REMOTE_CONTROL_H
