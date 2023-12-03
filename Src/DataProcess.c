@@ -5,6 +5,7 @@
 #ifndef EC_HW_PLATFORM_DATAPROCESS_H
 #define EC_HW_PLATFORM_DATAPROCESS_H
 
+#include "../Inc/DataProcess.h"
 
 float clamp(float val, float min, float max) {
     if (val < min) {
