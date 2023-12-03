@@ -69,8 +69,14 @@ void Error_Handler(void);
 #define UART6_RX_GPIO_Port GPIOG
 #define UAR1T_TX_Pin GPIO_PIN_9
 #define UAR1T_TX_GPIO_Port GPIOA
+#define LED_R_Pin GPIO_PIN_12
+#define LED_R_GPIO_Port GPIOH
 #define ADC_BAT_Pin GPIO_PIN_10
 #define ADC_BAT_GPIO_Port GPIOF
+#define LED_G_Pin GPIO_PIN_11
+#define LED_G_GPIO_Port GPIOH
+#define LED_B_Pin GPIO_PIN_10
+#define LED_B_GPIO_Port GPIOH
 #define KEY_Pin GPIO_PIN_0
 #define KEY_GPIO_Port GPIOA
 #define CS1_Accel_Pin GPIO_PIN_4
