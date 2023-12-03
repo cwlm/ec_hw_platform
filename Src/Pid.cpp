@@ -25,4 +25,3 @@ float Pid::calc(float ref, float fdb) {
     output_ = clamp(pOut_ + iOut_ + dOut_, -out_max_, out_max_);
     return output_;
 }
-
