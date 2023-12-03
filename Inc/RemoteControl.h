@@ -52,7 +52,7 @@ typedef struct
     }key;
 }__packed RC_Ctl_t;
 
-void sbus_to_rc(volatile const uint8_t *sbus_buf, RC_Ctl_t *rc_ctrl);
+void sbus_to_rc();
 void RC_init(void);
 
 #ifdef __cplusplus
