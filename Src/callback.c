@@ -2,7 +2,7 @@
 // Created by cwlm on 2023/11/23.
 //
 #include "usart.h"
-#include "../Inc/remoteControl.h"
+#include "../Inc/RemoteControl.h"
 #include "stm32f4xx_hal_dma.h"
 
 extern volatile uint8_t sbus_rx_buf[RC_FRAME_LENGTH];
