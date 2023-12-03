@@ -6,6 +6,10 @@
 #define EC_HW_PLATFORM_REMOTE_CONTROL_H
 #include "main.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /* ----------------------- RC Channel Definition---------------------------- */
 #define RC_CH_VALUE_MIN ((uint16_t)364 )
 #define RC_CH_VALUE_OFFSET ((uint16_t)1024)
@@ -49,5 +53,9 @@ typedef struct
 
 void sbus_to_rc(volatile const uint8_t *sbus_buf, RC_Ctl_t *rc_ctrl);
 void RC_init(void);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif //EC_HW_PLATFORM_REMOTE_CONTROL_H

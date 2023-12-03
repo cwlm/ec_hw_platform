@@ -396,11 +396,6 @@
           <GroupName>Application/User/Core</GroupName>
           <Files>
             <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/main.c</FilePath>
-            </File>
-            <File>
               <FileName>gpio.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/gpio.c</FilePath>
@@ -602,6 +597,11 @@
               <FileName>stm32f4xx_hal_msp.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/stm32f4xx_hal_msp.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\Core\Src\main.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -836,14 +836,19 @@
           <GroupName>User</GroupName>
           <Files>
             <File>
-              <FileName>remoteControl.c</FileName>
+              <FileName>Callback.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Src\remoteControl.c</FilePath>
+              <FilePath>..\Src\Callback.c</FilePath>
             </File>
             <File>
-              <FileName>callback.c</FileName>
+              <FileName>RemoteControl.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Src\callback.c</FilePath>
+              <FilePath>..\Src\RemoteControl.c</FilePath>
+            </File>
+            <File>
+              <FileName>DataProcess.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\DataProcess.c</FilePath>
             </File>
           </Files>
         </Group>
