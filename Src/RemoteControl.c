@@ -10,7 +10,6 @@ RC_Ctl_t rC_ctrl;
 extern UART_HandleTypeDef huart3;
 
 void RC_init(void) {
-    HAL_UART_MspInit(&huart3);
     HAL_UARTEx_ReceiveToIdle_DMA(&huart3, (uint8_t *) sbus_rx_buf, RC_FRAME_LENGTH);
 }
 
