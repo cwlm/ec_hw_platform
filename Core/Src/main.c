@@ -29,7 +29,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "../../Inc/remoteControl.h"
+#include "../../Inc/RemoteControl.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
