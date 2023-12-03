@@ -2,7 +2,7 @@
 // Created by cwlm on 2023/11/17.
 //
 
-#include "../Inc/remoteControl.h"
+#include "../Inc/RemoteControl.h"
 
 volatile uint8_t sbus_rx_buf[RC_FRAME_LENGTH];
 RC_Ctl_t rC_ctrl;
