@@ -12,6 +12,7 @@ extern "C"{
 float limit(float val, float min, float max);
 float loopLimit(float val, float min, float max);
 float deadBand(float val, float min, float max);
+float Encoder2Degree(float ecd, float ecd_range);
 
 
 #ifdef __cplusplus
