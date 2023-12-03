@@ -29,7 +29,7 @@ private:
 };
 
 #ifdef __cplusplus
-};
+}
 #endif
 
 #endif

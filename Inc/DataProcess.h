@@ -12,7 +12,7 @@ extern "C"{
 float clamp(float val, float min, float max);
 
 #ifdef __cplusplus
-};
+}
 #endif
 
 #endif //EC_HW_PLATFORM_DATAPROCESS_H
