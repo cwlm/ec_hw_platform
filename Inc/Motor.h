@@ -33,6 +33,8 @@ public:
     void Handle(); // 根据当前 mode_ 计算控制量
     void SetAngle(const float &target_angle); // 设置目标角度
     void SetSpeed(const float &target_speed); // 设置目标速度
+    void CanMessageUnpack(CAN_HandleTypeDef* hcan, CAN_RxHeaderTypeDef* rx_header, const uint8_t* rx_data);
+
 public:
     struct MotorInfo {
         Type type;
@@ -44,6 +46,7 @@ public:
     float target_angle_, target_speed_; // 期望角度、速度
     struct MotorData {
         float angle; // 减速后的输出端角度
+        float total_angle;
         float ecd_angle; // 编码器角度
         float last_ecd_angle;
         float rotate_speed; // 减速后的输出端转速
@@ -53,5 +56,6 @@ public:
     Pid pPid_, sPid_;
 };
 
+uint8_t IfDjiMotorMessage(CAN_RxHeaderTypeDef* rx_header);
 
 #endif //EC_HW_PLATFORM_MOTOR_H
