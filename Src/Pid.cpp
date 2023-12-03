@@ -16,12 +16,12 @@ float Pid::calc(float ref, float fdb) {
 
     last_err_ = err_;
     err_ = ref_ - fdb_;
-    err_sum_ = clamp(err_sum_ + err_, -i_max_, i_max_);
+    err_sum_ = limit(err_sum_ + err_, -i_max_, i_max_);
 
     pOut_ = kp_ * err_;
     iOut_ = ki_ * err_sum_;
     dOut_ = kd_ * (last_err_ - err_);
 
-    output_ = clamp(pOut_ + iOut_ + dOut_, -out_max_, out_max_);
+    output_ = limit(pOut_ + iOut_ + dOut_, -out_max_, out_max_);
     return output_;
 }

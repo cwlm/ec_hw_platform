@@ -9,7 +9,10 @@
 extern "C"{
 #endif
 
-float clamp(float val, float min, float max);
+float limit(float val, float min, float max);
+float loopLimit(float val, float min, float max);
+float deadBand(float val, float min, float max);
+
 
 #ifdef __cplusplus
 }

@@ -850,6 +850,16 @@
               <FileType>1</FileType>
               <FilePath>..\Src\DataProcess.c</FilePath>
             </File>
+            <File>
+              <FileName>Pid.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\Src\Pid.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>UserCAN.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\UserCAN.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
